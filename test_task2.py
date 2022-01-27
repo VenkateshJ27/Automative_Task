@@ -20,6 +20,7 @@ def test_validate(_driver):
     sleep(2)
     exp_price = _driver.find_element("xpath", "//div[text()='₹2,500']").text
     sleep(1)
+    # To Validate the Prices
     # if act_price == exp_price:
     #     print("cart item is same as item")
     assert act_price == exp_price
